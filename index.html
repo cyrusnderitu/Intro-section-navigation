@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav_logo">
+        <img src="./assets/images/logo.svg" alt="nav_logo" class="nav_logo">
+        <img src="./assets/images/icon-menu.svg" alt="menu_img" class="menu_open">
+      </div>
+      <div class="nav_menu">
+        <ul class="nav_lists">
+          <img src="./assets/images/icon-close-menu.svg" alt="menu_img" class="menu_close">
+          <div class="nav_list">
+            <li class="nav_item">
+              <a href="#" class="nav_link">Features
+                <img src="./assets/images/icon-arrow-down.svg" alt="arrow" class="dropdown">
+              </a>
+              <div class="accordion_items">
+                  <ul class="acc_lists">
+                    <li class="acc_item">
+                      <img src="./assets/images/icon-todo.svg" alt="todo" >
+                      <a href="#" class="acc_link">Todo List</a>
+                    </li>
+                    <li class="acc_item">
+                      <img src="./assets/images/icon-calendar.svg" alt="todo" >
+                      <a href="#" class="acc_link">Calendar</a>
+                    </li>
+                    <li class="acc_item">
+                      <img src="./assets/images/icon-reminders.svg" alt="todo" >
+                      <a href="#" class="acc_link">Reminder</a>
+                    </li>
+                    <li class="acc_item">
+                      <img src="./assets/images/icon-planning.svg" alt="todo" >
+                      <a href="#" class="acc_link">Planning</a>
+                    </li>
+                  </ul>
+              </div>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">Company
+                <img src="./assets/images/icon-arrow-down.svg" alt="arrow" class="dropdown">
+              </a>
+              <div class="accordion_items">
+                <ul class="acc_lists">
+                  <li class="acc_item">
+                    <a href="#" class="acc_link">History</a>
+                  </li>
+                  <li class="acc_item">
+                    <a href="#" class="acc_link">Our Team</a>
+                  </li>
+                  <li class="acc_item">
+                    <a href="#" class="acc_link">Blog</a>
+                  </li>
+                </ul>
+              </div>
+              
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">Careers</a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">About</a>
+            </li>
+          </div>
+          <div class="nav_logon">
+            <a href="#" class="nav_logon">Login</a>
+            <button class="btn nav_btn">Register</button>
+          </div>
+        </ul>
+      </div> 
+    </nav>
+    <div class="hero_sec">
+      <div class="hero_image">
+        <picture>
+          <source media="(min-width: 600px)" srcset="./assets/images/image-hero-desktop.png" class="hero_deskop-img">
+          <img src="./assets/images/image-hero-mobile.png" alt="card-image">
+        </picture>
+        <!-- <img src="./assets/images/image-hero-mobile.png" alt="hero_img"> -->
+      </div>
+      <div class="hero_content">
+        <h1 class="hero_title">Make remote work</h1> 
+        <p class="hero_desc">
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn hero_btn">
+          Learn more
+        </button>
+        <div class="hero_colab">
+          <img src="./assets/images/client-databiz.svg" alt="hero_img" class="hero_colab-img">
+          <img src="./assets/images/client-audiophile.svg" alt="hero_img" class="hero_colab-img">
+          <img src="./assets/images/client-meet.svg" alt="hero_img" class="hero_colab-img">
+          <img src="./assets/images/client-maker.svg" alt="hero_img" class="hero_colab-img">
+        </div>
+      </div>
+    </div>
+    
+  </header>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
