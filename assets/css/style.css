@@ -31,6 +31,7 @@ a{
     color: var(--text-color);
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 button{
     font-family: inherit;
@@ -42,6 +43,7 @@ img{
 }
 button{
     font-family: inherit;
+    cursor: pointer;
 }
 .header .flow{
     overflow: visible;
@@ -181,9 +183,9 @@ button{
         display: none;
     }
     .nav{
-        height: 4rem;
+        height: 6rem;
         position: relative;
-        padding: 1rem .75rem;
+        padding: 3rem .75rem;
         overflow: visible;
         display: flex;
         flex-direction: row;
@@ -191,9 +193,11 @@ button{
         justify-content: flex-start;
     }
     .nav_logo{
-        display: block;
         width: fit-content;
         margin-right: 1.5rem;
+    }
+    .nav_logo img{
+        width: 120px;
     }
     .nav_menu{
         position: initial;
@@ -208,11 +212,24 @@ button{
     .nav_list{
         display: flex;
         column-gap: 1.5rem;
+        position: relative;
     }
     .nav_item{
         margin-top: 0;
     }
+    .accordion_items .open_list{
+        overflow: auto;
+        height: initial;
+        position: absolute;
+        top: 1.5rem;
+        margin-right: 1.5rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: .5rem 1rem;
+    }
     .nav_link{
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
         font-size: 1.25rem;
     }
     .nav_lists{
@@ -248,19 +265,24 @@ button{
         height: calc(100% - 5rem);
         flex-direction: row-reverse;
         justify-content: space-between;
+        align-items: flex-start;
         column-gap: 4rem;
-        padding: 0 8rem;
+        padding: 6rem;
+        height: max-content;
     }
     .hero_content,
     .hero_image{
         flex: 1;
     }
     .hero_content{
+        align-self: flex-end;
+    }
+    .hero_content{
         display: flex;
         flex-direction: column;
         row-gap: 3rem;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-end;
         height: 100%;
     }
     .hero_title{
@@ -268,20 +290,35 @@ button{
         margin-bottom: 2rem;
     }
     .hero_desc{
-        font-size: 1.5rem;
+        font-size: 1.45rem;
         text-align: left;
+        width: 75%;
     }
     .hero_image{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         height: 100%;
-
     }
     .hero_image img{
         max-width: 100%;
         height: auto;
         width: 80%;
+    }
+    .hero_btn{
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        transition: .4s;
+        cursor: pointer;
+    }
+    .hero_btn:hover{
+        border: 1px solid black;
+        background-color: transparent;
+        color: var(--title-color);
+    }
+    .hero_colab{
+        width: 75%;
     }
     
 }
