@@ -21,7 +21,6 @@ header{
     margin-right: .75rem;  
     position: relative;
     transition: .4s;
-    overflow: hidden;
 }
 ul{
     list-style-type: none;
@@ -41,11 +40,19 @@ img{
     max-width: 100%;
     height: auto;
 }
+button{
+    font-family: inherit;
+}
+.header .flow{
+    overflow: visible;
+}
+
 /*NAV AREA DESIGN*/
 .nav{
     height: 3.5rem;
     position: relative;
     padding: 1rem .75rem;
+    overflow: hidden;
 }
 .nav_logo{
     display: flex;
@@ -60,7 +67,7 @@ img{
     background-color: hsla(0, 0%, 8%, .2);
     height: 100vh;
     width: calc(100% + 1.5rem);
-    transition: .5s ease-in-out;
+    transition: .3s;
 }
 .nav .open{
     right: 0;
@@ -103,8 +110,178 @@ img{
 .nav_logon{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
     margin-top: 1rem;
 }
 .nav_btn{
     width: fit-content;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: .5rem;
+    
+}
+
+/*HERO SECTION OF HEADER*/
+.hero_sec{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+}
+.hero_image{
+    width: calc(100% + 1.5rem);
+    margin: 0 -.75rem;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.5rem;
+}
+.hero_title{
+    font-size: 2.15rem;
+    font-weight: 700;
+}
+.hero_desc{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+.hero_colab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.hero_colab img{
+    max-width: 100%;
+    min-width: 60px;
+}
+.hero_btn{
+    padding: 1rem 1.75rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 1rem;
+    background-color: #000;
+    border: none;
+}
+
+@media screen and (min-width: 750px){
+    .menu_open{
+        display: none;
+    }
+    .menu_close{
+        display: none;
+    }
+    .nav{
+        height: 4rem;
+        position: relative;
+        padding: 1rem .75rem;
+        overflow: visible;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .nav_logo{
+        display: block;
+        width: fit-content;
+        margin-right: 1.5rem;
+    }
+    .nav_menu{
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+        height: auto;
+        width: 100%;
+        transition: none;
+    }
+    .nav_list{
+        display: flex;
+        column-gap: 1.5rem;
+    }
+    .nav_item{
+        margin-top: 0;
+    }
+    .nav_link{
+        font-size: 1.25rem;
+    }
+    .nav_lists{
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        background-color: transparent;
+    }
+    .nav_logon{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1.5rem;
+        align-items: center;
+        margin-top: 0;
+        font-size: 1.25rem;
+    }
+    .nav_login{
+        font-size: 1.2rem;
+    }
+    .nav_btn{
+        font-size: 1.25rem;
+        padding: .75rem 2.5rem;
+    }
+
+    /*HERO SECTION FOR DESKTOP*/
+    .hero_sec{
+        display: flex;
+        height: calc(100% - 5rem);
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        column-gap: 4rem;
+        padding: 0 8rem;
+    }
+    .hero_content,
+    .hero_image{
+        flex: 1;
+    }
+    .hero_content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+    }
+    .hero_title{
+        font-size: 6rem;
+        margin-bottom: 2rem;
+    }
+    .hero_desc{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .hero_image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+    }
+    .hero_image img{
+        max-width: 100%;
+        height: auto;
+        width: 80%;
+    }
+    
 }
