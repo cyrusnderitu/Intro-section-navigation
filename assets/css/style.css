@@ -21,6 +21,7 @@ header{
     margin-right: .75rem;  
     position: relative;
     transition: .4s;
+    overflow: hidden;
 }
 ul{
     list-style-type: none;
