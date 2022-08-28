@@ -263,6 +263,7 @@ button{
     .nav_btn{
         font-size: .936rem;
         padding: .5rem 1.5rem;
+        border-radius: 1.25rem;
     }
 
     /*HERO SECTION FOR DESKTOP*/
@@ -270,7 +271,7 @@ button{
         display: flex;
         flex-direction: row-reverse;
         column-gap: 6rem;
-        padding: 6rem 4rem 4rem 8rem;
+        padding: 4rem 5rem 5rem 6rem;
         height: calc(100% - 3.5rem);
     }
     .hero_content, 
@@ -300,12 +301,10 @@ button{
     }
     .hero_image img{
         max-width: 100%;
-        width: 420px;
-        height: 100%;
-        object-fit: cover;
+        width: 440px;
     }
     .hero_btn{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 }
 @media screen and (min-width: 1380px){
@@ -414,30 +413,31 @@ button{
     .hero_content{
         display: flex;
         flex-direction: column;
-        row-gap: 3rem;
-        align-items: flex-start;
-        justify-content: flex-end;
-        height: 100%;
+        align-items: start;
+        justify-content: center;
+        height: calc(100% - 3.5rem);
     }
     .hero_title{
-        font-size: 5rem;
-        margin-bottom: 2rem;
+        font-size: 4rem;
     }
     .hero_desc{
-        font-size: 1.45rem;
         text-align: left;
         line-height: 1.6;
+        margin-bottom: 1.5rem;
         width: 75%;
     }
     .hero_image{
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: start;
         height: 100%;
     }
     .hero_image img{
         max-width: 100%;
-        height: auto;
+        width: 440px;
+    }
+    .hero_btn{
+        margin-bottom: 5rem;
     }
     .hero_btn{
         font-size: 1.25rem;
@@ -450,10 +450,6 @@ button{
         border: 1px solid black;
         background-color: transparent;
         color: var(--title-color);
-    }
-    .hero_colab img{
-        max-width: 100%;
-        width: 100px;
     }
     .hero_colab img:nth-child(2){
         max-width: 100%;
