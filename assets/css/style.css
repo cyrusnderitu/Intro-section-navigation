@@ -162,7 +162,7 @@ button{
 }
 .hero_colab img{
     max-width: 100%;
-    min-width: 60px;
+    width: 80px;
 }
 .hero_btn{
     padding: 1rem 1.75rem;
@@ -175,7 +175,10 @@ button{
     border: none;
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 968px){
+    .header{
+        margin: 0;
+    }
     .menu_open{
         display: none;
     }
@@ -183,7 +186,137 @@ button{
         display: none;
     }
     .nav{
-        height: 6rem;
+        position: relative;
+        padding: 1.5rem 1.75rem .75rem;
+        overflow: visible;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .nav_logo{
+        width: fit-content;
+        margin-right: 1.5rem;
+    }
+    .nav_logo img{
+        width: 70px;
+    }
+    .nav_menu{
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+        height: auto;
+        width: 100%;
+        transition: none;
+    }
+    .nav_list{
+        display: flex;
+        column-gap: 1.5rem;
+        position: relative;
+    }
+    .nav_item{
+        margin-top: 0;
+    }
+    .accordion_items .open_list{
+        overflow: auto;
+        height: initial;
+        position: absolute;
+        top: 1rem;
+        margin-right: 1.5rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+    }
+    .acc_link{
+        font-size: .813rem;
+    }
+    .nav_link{
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        font-size: 1rem;
+    }
+    .nav_lists{
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        background-color: transparent;
+    }
+    .nav_logon{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1rem;
+        align-items: center;
+        margin-top: 0;
+        font-size: .913rem;
+    }
+    .nav_login{
+        font-size: .813rem;
+    }
+    .nav_btn{
+        font-size: .936rem;
+        padding: .5rem 1.5rem;
+    }
+
+    /*HERO SECTION FOR DESKTOP*/
+    .hero_sec{
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 6rem;
+        padding: 6rem 4rem 4rem 8rem;
+        height: calc(100% - 3.5rem);
+    }
+    .hero_content, 
+    .hero_image{
+        flex: 1;
+    }
+    .hero_content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        height: calc(100% - 3.5rem);
+    }
+    .hero_title{
+        font-size: 4rem;
+    }
+    .hero_desc{
+        text-align: left;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+    .hero_image{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        height: 100%;
+    }
+    .hero_image img{
+        max-width: 100%;
+        width: 420px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hero_btn{
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (min-width: 1380px){
+    .menu_open{
+        display: none;
+    }
+    .menu_close{
+        display: none;
+    }
+    .nav{
+        height: 3rem;
         position: relative;
         padding: 3rem .75rem;
         overflow: visible;
@@ -211,7 +344,7 @@ button{
     }
     .nav_list{
         display: flex;
-        column-gap: 1.5rem;
+        column-gap: 3rem;
         position: relative;
     }
     .nav_item{
@@ -224,7 +357,8 @@ button{
         top: 1.5rem;
         margin-right: 1.5rem;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        padding: .5rem 1rem;
+        padding: .5rem 2rem;
+        border-radius: .5rem;
     }
     .nav_link{
         display: flex;
@@ -286,12 +420,13 @@ button{
         height: 100%;
     }
     .hero_title{
-        font-size: 6rem;
+        font-size: 5rem;
         margin-bottom: 2rem;
     }
     .hero_desc{
         font-size: 1.45rem;
         text-align: left;
+        line-height: 1.6;
         width: 75%;
     }
     .hero_image{
@@ -303,7 +438,6 @@ button{
     .hero_image img{
         max-width: 100%;
         height: auto;
-        width: 80%;
     }
     .hero_btn{
         font-size: 1.25rem;
@@ -317,8 +451,12 @@ button{
         background-color: transparent;
         color: var(--title-color);
     }
-    .hero_colab{
-        width: 75%;
+    .hero_colab img{
+        max-width: 100%;
+        width: 100px;
     }
-    
+    .hero_colab img:nth-child(2){
+        max-width: 100%;
+        width: 80px;
+    }
 }
